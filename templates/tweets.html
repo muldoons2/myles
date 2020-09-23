@@ -1,0 +1,22 @@
+  
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+{% block body %}
+	<section id="main"><div class="inner">
+
+		<h1>Success</h1>	
+
+
+			<!-- <li>{{tweet_list}}</li> -->
+
+			{% for stuff in tweet_list%}
+				
+					<li ><b>{{stuff}}:</b>:<i>{{tweet_list[stuff]}}</i></li>
+				
+			{% endfor %}
+
+		
+	</div></section>
+{% endblock %}
